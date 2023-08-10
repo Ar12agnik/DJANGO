@@ -1,18 +1,19 @@
-import mysql.connector
+#import mysql.connector
 
 
-def connect_to_database():
+'''def connect_to_database():
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
         password="Agnik12345",
         database="text_utils"
     )
-    return connection
+    return connection'''
 
 
 def write_data(data):
-    connection = connect_to_database()
+    pass
+    '''connection = connect_to_database()
     cursor = connection.cursor()
 
     # Extract dictionary keys and values
@@ -33,10 +34,11 @@ def write_data(data):
 
     # Close the cursor and the database connection
     cursor.close()
-    connection.close()
+    connection.close()'''
 
 def read_data():
-    connection = connect_to_database()
+   pass
+   ''' connection = connect_to_database()
     cursor = connection.cursor()
 
     # Define the SQL query to retrieve data
@@ -52,7 +54,7 @@ def read_data():
     cursor.close()
     connection.close()
 
-    return rows
+    return rows'''
 
 
 if __name__=="__main__":
