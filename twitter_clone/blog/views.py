@@ -5,6 +5,7 @@ from .models import posts
 # Create your views here.
 def index(request):
     tweets = posts.objects.all()
+    print(type(tweets))
     return render(request, 'blog/index.html', {'tweets': tweets})
 def create_post(request):
     author=request.POST.get('author','anonymus')
